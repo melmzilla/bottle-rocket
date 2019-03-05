@@ -1,3 +1,9 @@
+.img-box{
+    display:flex; 
+    flex-direction:row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
 .background {
     background-image: url('./assets/cellGradientBackground@2x.png');
 }
@@ -47,6 +53,35 @@
 .footer-img {
     height: 2em;
     width: 2em;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: #ffffff;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
 }
 //Import base bootstrap css.  All custom overrides should be listed above.
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
