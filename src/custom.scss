@@ -1,3 +1,37 @@
 
+.header {
+    height: 90px;
+    background-color: #43e895;
+    padding-top: 2em;
+    margin: 0px;
+    position: relative;
+}
+
+.map-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+.header-sub {
+    text-align: center;
+}
+
+.header-text {
+    color: #ffffff;
+}
+
+.food-image {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.food-image {
+    height: 180px;
+    padding: 0px;
+    margin: 0px;
+}
 //Import base bootstrap css.  All custom overrides should be listed above.
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';

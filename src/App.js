@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
+import Header from './header.js';
 
 class App extends Component {
 
@@ -28,29 +29,15 @@ class App extends Component {
       console.log(this.state.food);
     })
   }
+
   //Render method
   render() {
     return (
-      <div className="App">
-        {/*<header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-    </header>*/}
+      <div>
+        <Header/>
           {this.state.food.map((item) => 
-            <div className="col-xs-12">
-              <img src={item.backgroundImageURL} alt="" key={item.name} />
-            </div>
-          )} 
+            <img src={item.backgroundImageURL} alt="" key={item.name} className="col-xs-12 col-sm-6 col-md-6 col-lg-6 food-image"/>
+          )}
       </div>
     );
   }
