@@ -1,4 +1,6 @@
-
+.background {
+    background-image: url('./assets/cellGradientBackground@2x.png');
+}
 .header {
     height: 90px;
     background-color: #43e895;
@@ -9,8 +11,10 @@
 
 .map-btn{
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 30px;
+    top: 30px;
+    height: 2em;
+    width: 2em;
   }
 
 .header-sub {
@@ -19,6 +23,7 @@
 
 .header-text {
     color: #ffffff;
+    font-size: 17px
 }
 
 .food-image {
@@ -32,6 +37,16 @@
     height: 180px;
     padding: 0px;
     margin: 0px;
+}
+
+.footer-btn {
+    background-color: #2a2a2a;
+    height: 90px;
+    border: 0px;
+}
+.footer-img {
+    height: 2em;
+    width: 2em;
 }
 //Import base bootstrap css.  All custom overrides should be listed above.
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
