@@ -12,6 +12,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+### `Google Map API Key`
+The API key for the Google Map has been removed for security.  Please enter a valid API key to see the map.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
